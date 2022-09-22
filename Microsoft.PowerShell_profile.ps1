@@ -39,13 +39,9 @@ function rm-item ($item) {
   Remove-Item -Confirm $item
 }
 
-function open-sublime {
-  Invoke-Item -Path C:\"Program Files"\"Sublime Text 3"\subl.exe
-}
-
 Color-Console
 
-Set-Alias -Name subl -Value open-sublime
+Set-Alias subl 'C:\Program Files\Sublime Text 3\subl.exe'
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name open -Value ii
