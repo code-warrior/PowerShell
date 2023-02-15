@@ -48,6 +48,10 @@ Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm-item
 Set-Alias home 'cd'
+Set-Alias c 'cd C:\'
+Set-Alias d 'cd D:\'
+Set-Alias e 'cd E:\'
+Set-Alias f 'cd F:\'
 
 # Refresh environment with `refreshenv`
 
