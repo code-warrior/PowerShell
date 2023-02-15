@@ -47,6 +47,7 @@ Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm-item
+Set-Alias home 'cd'
 
 # Refresh environment with `refreshenv`
 
