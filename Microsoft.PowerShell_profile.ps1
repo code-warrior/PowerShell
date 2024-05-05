@@ -46,7 +46,7 @@ Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
-Set-Alias -Name rm -Value rm-item
+Set-Alias -Name rm -Value rm-item -Option AllScope
 Set-Alias home 'cd'
 Set-Alias c 'cd C:\'
 Set-Alias d 'cd D:\'
