@@ -19,7 +19,7 @@ function Color-Console {
   $Host.PrivateData.VerboseBackgroundColor = $bckgrnd
   $Host.PrivateData.ProgressForegroundColor = 'Cyan'
   $Host.PrivateData.ProgressBackgroundColor = $bckgrnd
-  $hosttime = (Get-ChildItem -Path $PSHOME\pwsh.exe).CreationTime
+  $hosttime = (Get-ChildItem -Path $PSHOME\powershell.exe).CreationTime
   $hostversion="$($Host.Version.Major)`.$($Host.Version.Minor)"
   $Host.UI.RawUI.WindowTitle = "PowerShell $hostversion ($hosttime)"
   # Clear-Host
@@ -46,7 +46,7 @@ Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
-Set-Alias -Name rm -Value rm-item
+Set-Alias -Name rm -Value rm-item -Option AllScope
 Set-Alias -Name which -Value gcm
 Set-Alias home 'cd'
 Set-Alias c 'cd C:\'
