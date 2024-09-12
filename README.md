@@ -15,6 +15,8 @@ if (!(Test-Path -Path $PROFILE)) {
 The result might look something like:
 `C:\Users\roy_v\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
 
+You can type `$PROFILE` in PowerShell to echo the path to your profile. If the profile file doesn’t exist at that location, create it.
+
 ---
 
 ## 2. Update Execution Policy
