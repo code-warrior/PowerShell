@@ -46,11 +46,16 @@ function refresh-path {
         [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
+function listAllFiles {
+  Get-ChildItem . -Force
+}
+
 Color-Console
 
 Set-Alias -Name refreshPath -Value refresh-path
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
+Set-Alias -Name ls -Value listAllFiles
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm-item -Option AllScope
