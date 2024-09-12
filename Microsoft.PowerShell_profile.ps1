@@ -49,13 +49,14 @@ function refresh-path {
 Color-Console
 
 Set-Alias -Name refreshPath -Value refresh-path
-Set-Alias subl 'C:\Program Files\Sublime Text 3\subl.exe'
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm-item -Option AllScope
 Set-Alias -Name which -Value gcm
+
+Set-Alias subl 'C:\Program Files\Sublime Text 3\subl.exe'
 Set-Alias home 'cd'
 Set-Alias c 'cd C:\'
 Set-Alias d 'cd D:\'
