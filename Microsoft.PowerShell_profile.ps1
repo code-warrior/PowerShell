@@ -68,6 +68,6 @@ Set-Alias d 'cd D:\'
 Set-Alias e 'cd E:\'
 Set-Alias f 'cd F:\'
 
-# Refresh environment with `refreshenv`
+# Refresh environment with `refreshenv` if Chocolatey is installed.
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\M365Princess.omp.json" | Invoke-Expression
