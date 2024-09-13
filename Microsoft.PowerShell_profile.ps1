@@ -35,7 +35,7 @@ function touch_file ($path) {
   New-Item -ItemType File -Path $path
 }
 
-function rm-item ($item) {
+function rm_item ($item) {
   Remove-Item -Confirm $item
 }
 
@@ -58,7 +58,7 @@ Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name ls -Value listAllFiles
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
-Set-Alias -Name rm -Value rm-item -Option AllScope
+Set-Alias -Name rm -Value rm_item -Option AllScope
 Set-Alias -Name which -Value gcm
 
 Set-Alias subl 'C:\Program Files\Sublime Text 3\subl.exe'
