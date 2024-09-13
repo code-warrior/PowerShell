@@ -39,7 +39,7 @@ function rm_item ($item) {
   Remove-Item -Confirm $item
 }
 
-function refresh-path {
+function refresh_path {
   $env:Path =
     [System.Environment]::GetEnvironmentVariable("Path","Machine") +
       ";" +
@@ -52,7 +52,7 @@ function listAllFiles {
 
 Color-Console
 
-Set-Alias -Name refreshPath -Value refresh-path
+Set-Alias -Name refreshPath -Value refresh_path
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name ls -Value listAllFiles
