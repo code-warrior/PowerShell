@@ -46,7 +46,7 @@ function refresh_path {
         [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
-function listAllFiles {
+function list_all_files {
   Get-ChildItem . -Force
 }
 
@@ -55,7 +55,7 @@ Color-Console
 Set-Alias -Name refreshPath -Value refresh_path
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
-Set-Alias -Name ls -Value listAllFiles
+Set-Alias -Name ls -Value list_all_files
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm_item -Option AllScope
