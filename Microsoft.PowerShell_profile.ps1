@@ -46,6 +46,10 @@ function refresh_path {
         [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
+function run_my_sql {
+  & "C:\Program Files\MySQL\MySQL Server 8.1\bin\mysql.exe" --defaults-file="C:\ProgramData\MySQL\MySQL Server 8.1\my.ini" -uroot -p
+}
+
 function list_all_files {
   Get-ChildItem . -Force
 }
@@ -57,6 +61,7 @@ Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
 Set-Alias -Name ls -Value list_all_files
 Set-Alias -Name open -Value ii
+Set-Alias -Name mysql -Value run_my_sql
 Set-Alias -Name touch -Value touch_file
 Set-Alias -Name rm -Value rm_item -Option AllScope
 Set-Alias -Name which -Value gcm
