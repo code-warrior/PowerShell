@@ -19,7 +19,7 @@ function Color-Console {
   $Host.PrivateData.VerboseBackgroundColor = $bckgrnd
   $Host.PrivateData.ProgressForegroundColor = 'Cyan'
   $Host.PrivateData.ProgressBackgroundColor = $bckgrnd
-  $hosttime = (Get-ChildItem -Path $PSHOME\powershell.exe).CreationTime
+  $hosttime = (Get-ChildItem -Path $PSHOME\pwsh.exe).CreationTime
   $hostversion="$($Host.Version.Major)`.$($Host.Version.Minor)"
   $Host.UI.RawUI.WindowTitle = "PowerShell $hostversion ($hosttime)"
   # Clear-Host
