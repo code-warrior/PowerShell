@@ -19,7 +19,6 @@ function Color-Console {
   $Host.PrivateData.VerboseBackgroundColor = $bckgrnd
   $Host.PrivateData.ProgressForegroundColor = 'Cyan'
   $Host.PrivateData.ProgressBackgroundColor = $bckgrnd
-  $hosttime = (Get-ChildItem -Path $PSHOME\pwsh.exe).CreationTime
   $hostversion="$($Host.Version.Major)`.$($Host.Version.Minor)"
   $Host.UI.RawUI.WindowTitle = "PowerShell $hostversion ($hosttime)"
   # Clear-Host
@@ -67,8 +66,6 @@ Set-Alias c 'cd C:\'
 Set-Alias d 'cd D:\'
 Set-Alias e 'cd E:\'
 Set-Alias f 'cd F:\'
-
-# Refresh environment with `refreshenv` if Chocolatey is installed.
 
 # oh-my-posh init pwsh --config 'C:\Users\roy_v\AppData\Local\Programs\oh-my-posh\themes\catppuccin.omp.json' | Invoke-Expression
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin.omp.json" | Invoke-Expression
