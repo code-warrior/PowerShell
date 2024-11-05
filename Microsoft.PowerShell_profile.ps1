@@ -34,6 +34,10 @@ function touch_file ($path) {
   New-Item -ItemType File -Path $path
 }
 
+function tail_command ($file) {
+  Get-Content $file -last 10 -Wait
+}
+
 function rm_item ($item) {
   Remove-Item -Confirm $item
 }
@@ -51,6 +55,7 @@ function run_my_sql {
 
 Color-Console
 
+Set-Alias -Name tail -Value tail_command
 Set-Alias -Name refreshPath -Value refresh_path
 Set-Alias -Name desktop -Value my_home
 Set-Alias -Name dropbox -Value my_dropbox
